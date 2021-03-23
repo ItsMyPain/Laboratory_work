@@ -9,14 +9,16 @@ using namespace std;
 int main() {
     ofstream fout("6.txt");
     list<int> a;
-    //a.push_back(1);
-    for (int i = 0; i < 100000; i++) {
+    for (int i = 0; i < 10000000; i++)
+        a.push_back(1);
+
+    for (int i = 0; i < 10000000; i++) {
         auto begin = chrono::high_resolution_clock::now();
-        for (int j = 0; j < 1000; j++)
-            a.push_front(1);
+        for (int j = 0; j < 100; j++)
+            a.pop_front();
         auto end = chrono::high_resolution_clock::now();
         //if (i % 100 == 0)
-        fout << chrono::duration_cast<chrono::nanoseconds>(end - begin).count() / 1000 << " " << a.size() << endl;
+        fout << a.size() << " " << chrono::duration_cast<chrono::nanoseconds>(end - begin).count() / 100 << endl;
     }
     fout.close();
     return 0;
