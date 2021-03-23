@@ -1,0 +1,3 @@
+"D:\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Laboratory_work.dir/objects.a
+D:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\Laboratory_work.dir/objects.a @CMakeFiles\Laboratory_work.dir\objects1.rsp
+D:\MinGW\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Laboratory_work.dir/objects.a -Wl,--no-whole-archive  -o Laboratory_work.exe -Wl,--out-implib,libLaboratory_work.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Laboratory_work.dir\linklibs.rsp
