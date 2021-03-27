@@ -93,12 +93,12 @@ clean: CMakeFiles/Laboratory_work.dir/clean
 CMakeFiles/Laboratory_work.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laboratory_work.dir\build.make CMakeFiles/Laboratory_work.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laboratory_work.dir\build.make CMakeFiles/Laboratory_work.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Laboratory-work\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Laboratory_work"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Laboratory-work\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Laboratory_work"
 .PHONY : CMakeFiles/Laboratory_work.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Laboratory_work.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Laboratory-work\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Laboratory-work\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Laboratory_work.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Laboratory-work\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Laboratory_work.dir/rule

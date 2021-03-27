@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
-project(Laboratornaya_conteineri)
+project(Laboratory_work)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Laboratornaya_conteineri main.cpp)
+add_executable(Laboratory_work main.cpp Subvector.cpp)

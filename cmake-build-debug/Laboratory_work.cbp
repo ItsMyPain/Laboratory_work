@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Laboratory-work/Subvector.cpp">
+			<Option target="Laboratory_work"/>
+		</Unit>
 		<Unit filename="D:/Laboratory-work/main.cpp">
 			<Option target="Laboratory_work"/>
 		</Unit>
