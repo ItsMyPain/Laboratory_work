@@ -8,21 +8,23 @@
 using namespace std;
 
 int main() {
-    ofstream fout("2.txt");
+    ofstream fout("3.txt");
     vector<int> a;
     sub_vector suba;
-    a.push_back(1);
-    suba.push_back(1);
-    suba.init(10);
-    for (long long int i = 1; i < 10000; i++) {
+    suba.init(5000000);
+    for (long long int i = 0; i < 5000000; i++) {
+        a.push_back(i);
+    }
+
+    for (long long int i = 1; i < 5000; i++) {
         auto begin1 = chrono::high_resolution_clock::now();
         for (int j = 0; j < 1000; j++)
-            a.insert(a.begin() + (rand() % a.size()), 1);
+            a.erase(a.begin() + (rand() % a.size()));
         auto end1 = chrono::high_resolution_clock::now();
 
         auto begin2 = chrono::high_resolution_clock::now();
         for (int j = 0; j < 1000; j++)
-            suba.insert((rand() % i), 1);
+            suba.erase((rand() % i));
         auto end2 = chrono::high_resolution_clock::now();
 
         fout << chrono::duration_cast<chrono::microseconds>(end1 - begin1).count() / 1000 << " "
