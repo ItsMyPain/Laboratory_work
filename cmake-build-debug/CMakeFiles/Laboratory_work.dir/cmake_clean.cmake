@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Laboratory_work.dir/SubList.cpp.obj"
   "CMakeFiles/Laboratory_work.dir/Subvector.cpp.obj"
   "CMakeFiles/Laboratory_work.dir/main.cpp.obj"
   "Laboratory_work.exe"

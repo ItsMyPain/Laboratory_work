@@ -1,35 +1,42 @@
 #include <iostream>
 #include <chrono>
 #include <fstream>
-#include <vector>
+#include <forward_list>
 #include <cstdlib>
-#include "Subvector.cpp"
+#include <ctime>
+#include "SubList.cpp"
 
 using namespace std;
 
 int main() {
-    ofstream fout("3.txt");
-    vector<int> a;
-    sub_vector suba;
-    suba.init(5000000);
-    for (long long int i = 0; i < 5000000; i++) {
-        a.push_back(i);
+    ofstream fout("63.txt");
+    forward_list<int> a;
+    listt suba;
+
+    for (int i = 0; i < 100000; i++) {
+        a.push_front(1);
+        suba.push_forward(1);
     }
 
-    for (long long int i = 1; i < 5000; i++) {
+    for (int i = 100000; i < 10000000; i += 100) {
+        for (int k = 0; k < 100; k++)
+            a.push_front(1);
         auto begin1 = chrono::high_resolution_clock::now();
-        for (int j = 0; j < 1000; j++)
-            a.erase(a.begin() + (rand() % a.size()));
+        for (int j = 0; j < 1000; j++) {
+            a.pop_front();
+            a.push_front(1);
+        }
         auto end1 = chrono::high_resolution_clock::now();
+//        auto begin2 = chrono::high_resolution_clock::now();
+//        for (int j = 0; j < 1; j++)
+//            suba.pop_forward();
+//        auto end2 = chrono::high_resolution_clock::now();
 
-        auto begin2 = chrono::high_resolution_clock::now();
-        for (int j = 0; j < 1000; j++)
-            suba.erase((rand() % i));
-        auto end2 = chrono::high_resolution_clock::now();
-
-        fout << chrono::duration_cast<chrono::microseconds>(end1 - begin1).count() / 1000 << " "
-             << chrono::duration_cast<chrono::microseconds>(end2 - begin2).count() / 1000 << " " << a.size() << endl;
+        fout << chrono::duration_cast<chrono::nanoseconds>(end1 - begin1).count() << " " << i + 100
+             << endl;
     }
+
     fout.close();
+
     return 0;
 }

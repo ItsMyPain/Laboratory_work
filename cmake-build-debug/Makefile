@@ -142,6 +142,33 @@ Laboratory_work/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laboratory_work.dir\build.make CMakeFiles/Laboratory_work.dir/build
 .PHONY : Laboratory_work/fast
 
+SubList.obj: SubList.cpp.obj
+
+.PHONY : SubList.obj
+
+# target to build an object file
+SubList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laboratory_work.dir\build.make CMakeFiles/Laboratory_work.dir/SubList.cpp.obj
+.PHONY : SubList.cpp.obj
+
+SubList.i: SubList.cpp.i
+
+.PHONY : SubList.i
+
+# target to preprocess a source file
+SubList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laboratory_work.dir\build.make CMakeFiles/Laboratory_work.dir/SubList.cpp.i
+.PHONY : SubList.cpp.i
+
+SubList.s: SubList.cpp.s
+
+.PHONY : SubList.s
+
+# target to generate assembly for a file
+SubList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laboratory_work.dir\build.make CMakeFiles/Laboratory_work.dir/SubList.cpp.s
+.PHONY : SubList.cpp.s
+
 Subvector.obj: Subvector.cpp.obj
 
 .PHONY : Subvector.obj
@@ -205,6 +232,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Laboratory_work
+	@echo ... SubList.obj
+	@echo ... SubList.i
+	@echo ... SubList.s
 	@echo ... Subvector.obj
 	@echo ... Subvector.i
 	@echo ... Subvector.s

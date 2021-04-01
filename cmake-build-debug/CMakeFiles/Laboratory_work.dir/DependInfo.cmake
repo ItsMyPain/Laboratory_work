@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Laboratory-work/SubList.cpp" "D:/Laboratory-work/cmake-build-debug/CMakeFiles/Laboratory_work.dir/SubList.cpp.obj"
   "D:/Laboratory-work/Subvector.cpp" "D:/Laboratory-work/cmake-build-debug/CMakeFiles/Laboratory_work.dir/Subvector.cpp.obj"
   "D:/Laboratory-work/main.cpp" "D:/Laboratory-work/cmake-build-debug/CMakeFiles/Laboratory_work.dir/main.cpp.obj"
   )

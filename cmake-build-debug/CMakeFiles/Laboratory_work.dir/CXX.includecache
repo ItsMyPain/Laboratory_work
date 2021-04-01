@@ -6,12 +6,8 @@
 
 #IncludeRegexTransform: 
 
-D:/Laboratory-work/Subvector.cpp
+D:/Laboratory-work/SubList.cpp
 iostream
--
-cstdlib
--
-ctime
 -
 
 D:/Laboratory-work/main.cpp
@@ -21,10 +17,12 @@ chrono
 -
 fstream
 -
-vector
+forward_list
 -
 cstdlib
 -
-Subvector.cpp
-D:/Laboratory-work/Subvector.cpp
+ctime
+-
+SubList.cpp
+D:/Laboratory-work/SubList.cpp
 
