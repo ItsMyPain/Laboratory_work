@@ -13,7 +13,7 @@ template<typename T>
 void FillL(T &obj) {
     for (int i = 0; i < 1000; i++)
         obj.push_front(1);
-}
+} 
 
 void Fill(vector<int> &obj) {
     for (int i = 0; i < 1000; i++)
